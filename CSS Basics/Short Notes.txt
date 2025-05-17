@@ -1,0 +1,48 @@
+CSS Basics:
+
+For class selector, we can select multiple classes in the same attribute . For example:
+<div class = “class="alert-text   severe-alert" > Jisan</div>
+Here we have selected multiple class.
+ID selector: 
+ID selectors are similar to class selectors. They select an element with the given ID, which is another attribute you place on an HTML element. The major difference between classes and IDs is that an element can only have one ID. It cannot be repeated on a single page and should not contain any whitespace.
+            <div id = “major”> jisan</div>
+There are cases where using an ID makes sense or is needed, such as taking advantage of specificity or having links redirect to a section on the current page, you should use IDs sparingly (if at all).
+
+If we have two ID’s with different names but same elements, then we can just group them using comma separation like:
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+.read {
+  /* several unique declarations */
+}
+
+.unread {
+  /* several unique declarations */
+}
+Chaining selectors :
+.subsection.header {
+  color: red;
+}
+This applies the .subsection class and also the unique styles from the .subsection.header class. 
+<div class = “subsection header” > Jisan</div>
+
+Chaining ID with a Class:
+
+.subsection#preview {
+  color: blue;
+}
+<div class = “subsection” id = “preview”>Jisan</div>
+
+Descendant Combinator:
+<div class = “ancestor”> Jisan
+     <div class = “content”> Again</div>
+</div>
+
+/*style.css*/
+.ancestor .contents {
+  /* some declarations */
+}
+
+
