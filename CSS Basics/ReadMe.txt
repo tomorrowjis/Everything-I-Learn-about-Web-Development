@@ -1,1 +1,1 @@
-After reading the contents of the provided links, then read the doc files for short notes. 
+After reading the contents of the provided links, read the doc files for short notes. 
