@@ -1,0 +1,60 @@
+#Class and Inheritance
+#Super is required to call the parents constructor
+
+class ElectricCar extends Car {
+  constructor(brand, model, batteryRange) {
+    super(brand, model); // call parent class constructor
+    this.batteryRange = batteryRange;
+  }
+
+  charge() {
+    console.log(`${this.brand} ${this.model} is charging...`);
+  }
+}
+
+const tesla = new ElectricCar("Tesla", "Model Y", 450);
+tesla.drive(100); 
+tesla.charge();
+
+#getter and setter in JS:
+
+Getter → a special method that lets you access a property like it’s a normal variable.
+
+Setter → a special method that lets you control how a property is updated.
+
+Think of them as guards for your class properties:
+
+A getter hides how the data is calculated or stored.
+
+A setter adds rules before changing the value.
+
+
+#Getter basically makes a method to act like a normal variable where we can assign values.
+
+class Student {
+  constructor(name) {
+    this.name = name;
+    this._marks = 0;
+  }
+
+  // getter
+  get marks() {
+    return this._marks;
+  }
+
+  // setter
+  set marks(value) {
+    if (value < 0 || value > 100) {
+      console.log("Invalid marks. Must be between 0 and 100.");
+    } else {
+      this._marks = value;
+    }
+  }
+}
+
+const s2 = new Student("Hasan");
+s2.marks = 95;        // using setter
+console.log(s2.marks); // 95
+
+s2.marks = 150;       // Invalid, setter blocks it
+console.log(s2.marks); // still 95
