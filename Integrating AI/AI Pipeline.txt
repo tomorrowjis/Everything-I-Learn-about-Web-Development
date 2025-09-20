@@ -1,0 +1,10 @@
+When you build an AI-powered app, you usually have:
+
+Frontend – where the user interacts (React, HTML, etc.)
+Backend – your server, which calls the AI API (e.g., OpenAI’s API)
+
+“Pipeline control” means deciding:
+
+Where the AI request happens (client or server).
+Who provides the API key (you or the user).
+How much control the user has (model choice, temperature, max tokens, etc.).
