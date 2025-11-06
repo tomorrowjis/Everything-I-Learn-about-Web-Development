@@ -1,4 +1,6 @@
 # 🏆 Becoming a Top 1% Node.js Developer
+> I asked this question to ChatGPT to know when it would consider a person in top 1% NodeJS developer.
+> The prompt is: when would you consider me as a top 1% node developer, what skills and qualifications would you see in me ?
 
 > What would make someone a **top 1% Node.js developer**?
 > Here’s the complete breakdown — skills, mindset, and mastery levels that separate pros from the rest.
