@@ -1,4 +1,4 @@
-##Enterprise-Level Front-End Security Practices
+#Enterprise-Level Front-End Security Practices
 
 Large companies adopt a defense-in-depth strategy, securing the client-side code (HTML, CSS, JavaScript) against various attacks, most commonly Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), and unauthorized data access.
 
